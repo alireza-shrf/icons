@@ -1,0 +1,55 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #303030;
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: 2px solid #ffffff;
+    /* transition-property: outline-offset , outline-color , background-color; */
+    transition-duration: 0.25s;
+    display: inline-flex;
+    /* justify-content: center;
+    align-items: center; */
+    
+    color: white;
+    font-size: 25px;
+}
+.icon:hover{ outline-offset: 5px;
+}
+.icon i{margin: auto;}
+.icon:hover i {animation: shake 0.25s;}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+
+}
+.icon.instagram:hover {
+    background: linear-gradient(15deg , #ffd500, #fe7b7b ,#8f00fd);
+    outline: 2px solid #fd6ff1;}
+.icon.twitter:hover{
+    background-color: #00c8ff;
+}
+.icon.facebook:hover{background-color: #3f5fff;
+    outline: 2px solid #0004ff9d;}
+    
